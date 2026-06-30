@@ -42,12 +42,11 @@ export default function Footer() {
                 </div>
                 <h3 className="font-semibold tracking-widest text-sm text-black">LOCATION</h3>
                 <p className="text-sm text-black">
-                  123 Celebration Way <br />
-                  Your City, State 12345
+                 22a Eastern Bypass, <br /> Port Harcourt, 500101, Rivers State
                 </p>
-                <p className="text-sm text-black">
+                {/* <p className="text-sm text-black">
                   Conveniently located with ample parking and easy access.
-                </p>
+                </p> */}
               </div>
             </div>
 
