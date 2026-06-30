@@ -16,11 +16,11 @@ import CampLogo from "../public/images/CampLogo.PNG";
 const BRAND = "Hilton";
 const TAGLINE = "FOR THE STAY";
 
-const LINKS = ["Home", "Rooms", "Hotel Info", "Offers", "Gallery", "Location", "Dining", "Events"];
+const LINKS = ["Home",  "Gallery",  "Dining", "Events"];
 
 const EXPANDABLE = [
-  { label: "Hotels & Resorts", items: ["All Brands", "Find a Hotel", "Special Offers"] },
-  { label: "Hilton Honors", items: ["Join Now", "Sign In", "Member Benefits"] },
+  // { label: "Hotels & Resorts", items: ["All Brands", "Find a Hotel", "Special Offers"] },
+  // { label: "Hilton Honors", items: ["Join Now", "Sign In", "Member Benefits"] },
 ];
 
 export default function NavBar() {
@@ -32,7 +32,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="relative -left-20 z-50 w-full border-b border-gray-200 bg-white">
+    <header className="relative -left-20  w-full border-b border-gray-200 bg-white ">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <img src={CampLogo} alt=""  className="h-20"/>
         <span className="font-serif text-2xl font-bold tracking-tight text-blue-950">
@@ -90,6 +90,9 @@ export default function NavBar() {
             <Menu size={22} />
           </button>
         </div>
+         {/* <button >
+      Sign In
+      </button> */}
       </div>
 
       {/* Mobile slide-in panel */}
@@ -173,6 +176,7 @@ export default function NavBar() {
           </div>
         </div>
       )}
+     
     </header>
   );
 }

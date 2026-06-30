@@ -9,7 +9,7 @@ import { Accessibility, Ban, Bath, Briefcase, Building2, CalendarCheck, Calendar
     
 export default function CampAndPride() {
     return(
-        <div className="overflow-hidden">
+        <div >
         <section>
 
         <div>
@@ -23,8 +23,8 @@ export default function CampAndPride() {
         </section>
 
         <section>
-            <div>
-               {/* <CampPrideBookingBar/> */}
+            <div className="w-full bg-white border-t border-b border-gray-300 sticky top-0  z-90 shadow-sm">
+               <CampPrideBookingBar/>
 
             </div>
             <div className="my-15">

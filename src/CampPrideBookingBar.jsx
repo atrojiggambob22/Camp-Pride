@@ -3,7 +3,8 @@ import React from "react";
 
 export default function CampPrideBookingBar() {
   return (
-    <div className="w-full bg-white border-t border-b border-gray-300">
+   <div className="w-full bg-white border-t border-b border-gray-300 sticky top-0 z-50 shadow-sm">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 py-5">
           
