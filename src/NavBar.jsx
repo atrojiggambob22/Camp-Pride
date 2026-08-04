@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { X, Menu, CalendarCheck, ChevronRight } from "lucide-react";
 import CampLogo from "/images/CampLogo.PNG?url";
 
@@ -13,8 +14,8 @@ const LINKS = [
 export default function NavBar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  return (
-    <header className="sticky top-0 z-50 w-full border-b border-navy-100 bg-white/95 backdrop-blur">
+return (
+    <header className="sticky top-0 z-50 w-full border-b border-navy-100 bg-white/95 shadow-sm backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand */}
         <a href="#home" className="flex items-center gap-3">
@@ -62,9 +63,10 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Mobile slide-in panel */}
-      {mobileOpen && (
-        <div className="fixed inset-0 z-50 lg:hidden">
+{/* Mobile slide-in panel (portal to body so it isn't trapped by backdrop-blur) */}
+      {mobileOpen &&
+        createPortal(
+          <div className="fixed inset-0 z-50 lg:hidden">
           <div
             className="absolute inset-0 bg-black/40"
             onClick={() => setMobileOpen(false)}
@@ -105,13 +107,14 @@ export default function NavBar() {
                 <CalendarCheck size={16} />
                 Book Your Event
               </a>
-              <p className="mt-4 text-center text-xs text-gray-500">
+<p className="mt-4 text-center text-xs text-gray-500">
                 Create unforgettable moments at Camp &amp; Pride Place.
               </p>
             </div>
           </div>
-        </div>
-      )}
+        </div>,
+          document.body
+        )}
     </header>
   );
 }

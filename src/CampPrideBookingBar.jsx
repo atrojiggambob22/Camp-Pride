@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, CalendarDays, Users } from "lucide-react";
 
 export default function CampPrideBookingBar() {
@@ -30,7 +29,7 @@ export default function CampPrideBookingBar() {
 
             <div className="inline-flex items-center gap-2 rounded-md border border-navy-100 px-4 py-2.5 text-sm text-navy-900">
               <Users size={16} className="text-gold-600" />
-              <span className="font-medium">Weddings &amp; Corporate</span>
+              <span className="font-medium">Social &amp; Corporate Event</span>
             </div>
 
             <a

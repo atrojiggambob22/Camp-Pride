@@ -1,19 +1,15 @@
-# Site Redesign TODO
+# TODO - Camp & Pride Site Updates
 
 ## Steps
-- [x] Analyze existing site and gather file structure
-- [x] Update `index.html` (title + meta)
-- [x] Update `src/index.css` (fonts, base styles, navy + gold theme)
-- [x] Rewrite `src/NavBar.jsx` (responsive nav, Camp & Pride branding)
-- [x] Rewrite `src/ImageCarousel.jsx` (auto-play, loop, dots, responsive)
-- [x] Rewrite `src/CampPrideBookingBar.jsx` (consistent address, responsive)
-- [x] Rebuild `src/Camp&Pride.jsx` (responsive sections, hero, amenities, policies)
-- [x] Rewrite `src/Footer.jsx` (working icons, proper contrast, responsive)
-- [x] Clean `src/App.css` (remove dead code)
-- [x] Clean `src/App.jsx` (remove unused imports)
-- [x] Run build and verify (build succeeded)
-- [x] Fix CampLogo import path (use `?url` from public)
-- [x] Install `@emailjs/browser`
-- [x] Create `src/BookingForm.jsx` (sends to email via EmailJS)
-- [x] Integrate BookingForm into the contact section
-- [ ] Configure EmailJS credentials (SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY)
+- [x] 1. Update Hero section: remove "Premium Event Center · Port Harcourt" badge, start with "Camp & Pride Place" + "Create Unforgettable Moments", remove "500+ Events Hosted", change to "Social & Corporate Event".
+- [x] 2. Update Amenities: change "Secure Parking" → "Free Parking", add Multimedia Projector, Flip Chart, Changing Room, Free Beverages Refrigeration, Storage, Air-Conditioned Hall/Meeting Rooms, CCTV Surveillance.
+- [x] 3. Update Professional Support section: change title to "Spacious Event Hall and Meeting Rooms", add Ushering Service, Registration Desk, Bouncers, DJ, Catering, Photography, Decorations, Cake & Confectionaries.
+- [x] 4. Update Policies: remove "Security Available On-Site", remove "Outside Catering by Approval", add "The Rules of the House".
+- [x] 5. Add Hall Rental Pricing section with weekend/weekday rates, extra hours, hourly booking, extended contract, deposit, terms & conditions, and "Check Availability & Pricing" CTA.
+- [x] 6. Update Booking Bar: "Weddings & Corporate" → "Social & Corporate Event".
+- [x] 7. Update Footer: phone numbers +2347015320411, +2348126440897, Account Name "Camp and Pride Limited", Bank Details "On request".
+- [x] 8. Update index.html title to "Camp and Pride Place | Premium Event Venue".
+- [x] 9. Run build to verify no errors.
+
+## Follow-up
+- [x] Run production build ─ succeeded with no errors.

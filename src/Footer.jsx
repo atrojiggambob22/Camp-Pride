@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MapPin,
   Phone,
@@ -9,6 +8,7 @@ import {
   Camera,
   Mail,
   Globe,
+  CalendarCheck,
 } from "lucide-react";
 import CampLogo from "/images/CampLogo.PNG?url";
 
@@ -62,7 +62,10 @@ export default function Footer() {
             </div>
             <div className="mt-4 space-y-2 text-sm text-navy-100">
               <p className="flex items-center gap-2">
-                <Phone size={14} className="text-gold-400" /> (123) 456-7890
+                <Phone size={14} className="text-gold-400" /> +234 701 5320 411
+              </p>
+              <p className="flex items-center gap-2">
+                <Phone size={14} className="text-gold-400" /> +234 812 6440 897
               </p>
               <p className="flex items-center gap-2">
                 <Mail size={14} className="text-gold-400" /> info@campandpride.com
@@ -71,9 +74,22 @@ export default function Footer() {
                 <Globe size={14} className="text-gold-400" /> www.campandpride.com
               </p>
             </div>
-          </div>
 
-          {/* Hours */}
+            <div className="mt-6 border-t border-white/10 pt-4">
+              <div className="flex items-center gap-2">
+                <CalendarCheck size={18} className="text-gold-400" />
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+                  Payment
+                </h3>
+              </div>
+              <div className="mt-3 space-y-1 text-sm text-navy-100">
+                <p className="font-medium text-white">Account Name:</p>
+                <p>Camp and Pride Limited</p>
+                <p className="font-medium text-white">Bank Details:</p>
+                <p>On request</p>
+              </div>
+            </div>
+          </div>
           <div>
             <div className="flex items-center gap-2">
               <Clock size={18} className="text-gold-400" />
@@ -131,6 +147,9 @@ export default function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:px-6 md:flex-row lg:px-8">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-navy-200">
             Celebrate. Inspire. Create Memories.
+          </p>
+          <p>
+            Copyright &copy; {new Date().getFullYear()} Designed by NovarisX Creative.
           </p>
 
           <div className="flex items-center gap-4">
