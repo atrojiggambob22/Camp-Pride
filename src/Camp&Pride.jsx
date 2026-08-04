@@ -105,7 +105,7 @@ export default function CampAndPride() {
               Create Unforgettable Moments
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-navy-100">
-              A sophisticated venue for social and corporate events — with elegant
+              A sophisticated venue for social and corporate events with elegant
               interiors, modern facilities, and professional event support.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -185,7 +185,7 @@ export default function CampAndPride() {
             <p>
               With elegant interiors, modern facilities, ample parking, professional event
               support, and customizable venue setups, we provide everything you need to
-              bring your vision to life — from an intimate gathering to a grand celebration.
+              bring your vision to life from an intimate gathering to a grand celebration.
             </p>
           </div>
         </div>
@@ -214,138 +214,7 @@ export default function CampAndPride() {
         </div>
       </section>
 
-      {/* Hall Rental Pricing */}
-      <section id="pricing" className="scroll-mt-20 bg-navy-50/60 py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionTitle
-            eyebrow="Hall Rental Pricing"
-            title="Transparent & Flexible Rates"
-            subtitle="All bookings are subject to a refundable caution/damage deposit of ₦100,000.00."
-          />
-
-          <div className="mt-12 grid gap-6 lg:grid-cols-2">
-            {/* Weekend Rates */}
-            <div className="rounded-3xl border border-navy-100 bg-white p-8 shadow-sm">
-              <div className="flex items-center justify-between">
-                <h3 className="font-display text-2xl font-bold text-navy-900">Weekend Rates</h3>
-                <span className="rounded-full bg-gold-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold-700">
-                  Saturday &amp; Sunday
-                </span>
-              </div>
-
-              <div className="mt-6 space-y-4">
-                <div className="rounded-2xl border border-navy-100 bg-navy-50/60 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="font-medium text-navy-900">Full Day Package</p>
-                      <p className="text-sm text-gray-500">8:00 AM – 4:00 PM · 8 Hours</p>
-                    </div>
-                    <p className="font-display text-xl font-bold text-navy-900">₦1,250,000.00</p>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-navy-100 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <p className="font-medium text-navy-900">Extra Hours</p>
-                    <p className="font-display text-xl font-bold text-navy-900">₦200,000.00<span className="text-sm font-medium text-gray-500">/hr</span></p>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-navy-100 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="font-medium text-navy-900">Hourly Booking</p>
-                      <p className="text-sm text-gray-500">Subject to a minimum of 2 hours</p>
-                    </div>
-                    <p className="font-display text-xl font-bold text-navy-900">₦300,000.00<span className="text-sm font-medium text-gray-500">/hr</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Weekday Rates */}
-            <div className="rounded-3xl border border-navy-100 bg-white p-8 shadow-sm">
-              <div className="flex items-center justify-between">
-                <h3 className="font-display text-2xl font-bold text-navy-900">Weekday Rates</h3>
-                <span className="rounded-full bg-navy-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-navy-700">
-                  Monday – Friday
-                </span>
-              </div>
-
-              <div className="mt-6 space-y-4">
-                <div className="rounded-2xl border border-navy-100 bg-navy-50/60 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="font-medium text-navy-900">Full Day Package</p>
-                      <p className="text-sm text-gray-500">8:00 AM – 4:00 PM · 8 Hours</p>
-                    </div>
-                    <p className="font-display text-xl font-bold text-navy-900">₦800,000.00</p>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-navy-100 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <p className="font-medium text-navy-900">Extra Hours</p>
-                    <p className="font-display text-xl font-bold text-navy-900">₦200,000.00<span className="text-sm font-medium text-gray-500">/hr</span></p>
-                  </div>
-                </div>
-
-                <div className="rounded-2xl border border-navy-100 p-5">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <p className="font-medium text-navy-900">Hourly Booking</p>
-                      <p className="text-sm text-gray-500">Subject to a minimum of 2 hours</p>
-                    </div>
-                    <p className="font-display text-xl font-bold text-navy-900">₦250,000.00<span className="text-sm font-medium text-gray-500">/hr</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Extended Contract */}
-          <div className="mt-6 rounded-3xl border border-gold-300 bg-gold-50 p-6 text-center">
-            <p className="text-sm font-semibold uppercase tracking-widest text-gold-700">Extended Contract</p>
-            <p className="mt-1 font-display text-2xl font-bold text-navy-900">Negotiable</p>
-          </div>
-
-          {/* Terms & Conditions */}
-          <div className="mt-10 rounded-3xl border border-navy-100 bg-white p-8 shadow-sm">
-            <h3 className="flex items-center gap-2 font-display text-xl font-bold text-navy-900">
-              <ClipboardCheck size={22} className="text-gold-600" /> Other Terms &amp; Conditions
-            </h3>
-            <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-              <li className="flex items-start gap-3 text-sm text-gray-700">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-gold-600" />
-                Time booked includes setup and pack down.
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-700">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-gold-600" />
-                Extra hours will be charged accordingly.
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-700">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-gold-600" />
-                Booking is confirmed upon full payment.
-              </li>
-              <li className="flex items-start gap-3 text-sm text-gray-700">
-                <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-gold-600" />
-                Prices are subject to review without prior notice.
-              </li>
-            </ul>
-          </div>
-
-          {/* Check Availability CTA */}
-          <div className="mt-10 text-center">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 rounded-md bg-navy-900 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-colors hover:bg-navy-800"
-            >
-              <CalendarCheck size={18} className="text-gold-400" />
-              Check Availability &amp; Pricing
-            </a>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Policies */}
 <section id="policies" className="scroll-mt-20 bg-navy-950 py-16">
@@ -396,7 +265,7 @@ export default function CampAndPride() {
                 <div>
                   <p className="font-medium text-navy-900">Quick &amp; Simple</p>
                   <p className="text-sm text-gray-600">
-                    Fill in a few details — no account needed.
+                    Fill in a few details  no account needed.
                   </p>
                 </div>
               </div>
