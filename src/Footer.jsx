@@ -1,128 +1,167 @@
 import React from "react";
-// import { MapPin, Phone, Clock, Calendar, ArrowRight, Facebook, Instagram, Map } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Clock,
+  Calendar,
+  ArrowRight,
+  Share2,
+  Camera,
+  Mail,
+  Globe,
+} from "lucide-react";
+import CampLogo from "/images/CampLogo.PNG?url";
 
 export default function Footer() {
   return (
-    <div className="bg-white"> {/* White outer background */}
-      <footer className="bg-[#f3f3f3] w-full text-white"> {/* Dark blue footer */}
-        {/* Top accent line */}
-        <div className="w-full h-1"></div>
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
-            
-            {/* Brand + About */}
-            <div className="lg:col-span-2">
-              {/* Logo */}
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-red-600 text-7xl font-serif italic leading-none">L</span>
-                <div>
-                  <h2 className="text-red-600 text-2xl font-semibold tracking-wide">
-                    CAMP & PRIDE
-                  </h2>
-                  <div className="flex items-center gap-2 text-gray-300 text-sm tracking-[0.2em]">
-                    <span className="w-6 h-px bg-gray-500"></span>
-                    EVENT CENTER
-                    <span className="w-6 h-px bg-gray-500"></span>
-                  </div>
-                </div>
+    <footer id="contact" className="bg-navy-950 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3">
+              <img src={CampLogo} alt="Camp and Pride logo" className="h-14 w-auto" />
+              <div>
+                <h2 className="font-display text-xl font-bold text-white">CAMP &amp; PRIDE</h2>
+                <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-gold-400">
+                  Event Center
+                </p>
               </div>
+            </div>
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-navy-100">
+              Camp and Pride Event Center is where unforgettable moments come to life.
+              From elegant weddings to corporate events, we provide the perfect setting
+              for every celebration.
+            </p>
+          </div>
 
-              <p className="text-black leading-relaxed max-w-sm">
-                Camp and Pride Event Center is where unforgettable moments come to life. 
-                From elegant weddings to corporate events, we provide the perfect setting for every celebration.
+          {/* Location */}
+          <div>
+            <div className="flex items-center gap-2">
+              <MapPin size={18} className="text-gold-400" />
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+                Location
+              </h3>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-navy-100">
+              22a Eastern Bypass,
+              <br />
+              Port Harcourt, 500101,
+              <br />
+              Rivers State, Nigeria
+            </p>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <div className="flex items-center gap-2">
+              <Phone size={18} className="text-gold-400" />
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+                Contact
+              </h3>
+            </div>
+            <div className="mt-4 space-y-2 text-sm text-navy-100">
+              <p className="flex items-center gap-2">
+                <Phone size={14} className="text-gold-400" /> (123) 456-7890
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail size={14} className="text-gold-400" /> info@campandpride.com
+              </p>
+              <p className="flex items-center gap-2">
+                <Globe size={14} className="text-gold-400" /> www.campandpride.com
               </p>
             </div>
-
-            {/* Location */}
-            <div className="border-l border-gray-700 pl-6">
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center">
-                  {/* <MapPin className="w-5 h-5 text-red-500" /> */}
-                </div>
-                <h3 className="font-semibold tracking-widest text-sm text-black">LOCATION</h3>
-                <p className="text-sm text-black">
-                 22a Eastern Bypass, <br /> Port Harcourt, 500101, Rivers State
-                </p>
-                {/* <p className="text-sm text-black">
-                  Conveniently located with ample parking and easy access.
-                </p> */}
-              </div>
-            </div>
-
-            {/* Contact */}
-            <div className="border-l border-gray-700 pl-6">
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center">
-                  {/* <Phone className="w-5 h-5 text-red-500" /> */}
-                </div>
-                <h3 className="font-semibold tracking-widest text-sm text-black">CONTACT</h3>
-                <p className="text-sm text-black">(123) 456-7890</p>
-                <p className="text-sm text-black">info@campandpride.com</p>
-                <p className="text-sm text-black">www.campandpride.com</p>
-              </div>
-            </div>
-
-            {/* Hours */}
-            <div className="border-l border-gray-700 pl-6">
-              <div className="flex flex-col items-center text-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center">
-                  {/* <Clock className="w-5 h-5 text-red-500" /> */}
-                </div>
-                <h3 className="font-semibold tracking-widest text-sm text-black">HOURS</h3>
-                <p className="text-sm text-black">Monday - Friday <br /> 9:00 AM - 6:00 PM</p>
-                <p className="text-sm text-black">Saturday <br /> 10:00 AM - 4:00 PM</p>
-                <p className="text-sm text-black">Sunday <br /> By Appointment</p>
-              </div>
-            </div>
-
           </div>
 
-          {/* Book Event CTA */}
-          <div className="mt-12 border-t border-gray-700 pt-8 flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-red-700/20 flex items-center justify-center shrink-0">
-                {/* <Calendar className="w-5 h-5 text-red-500" /> */}
-              </div>
-              <div>
-                <h3 className="font-semibold tracking-widest text-sm text-black mb-2">BOOK YOUR EVENT</h3>
-                <p className="text-sm text-black max-w-xs">
-                  Let our team help you create an experience to remember.
-                </p>
-              </div>
+          {/* Hours */}
+          <div>
+            <div className="flex items-center gap-2">
+              <Clock size={18} className="text-gold-400" />
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+                Hours
+              </h3>
             </div>
-            
-            <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 rounded-sm flex items-center gap-2 font-medium transition">
-              {/* BOOK NOW <ArrowRight className="w-4 h-4" /> */}
-            </button>
+            <div className="mt-4 space-y-2 text-sm text-navy-100">
+              <p>
+                <span className="font-medium text-white">Mon – Fri</span>
+                <br />
+                9:00 AM – 6:00 PM
+              </p>
+              <p>
+                <span className="font-medium text-white">Saturday</span>
+                <br />
+                10:00 AM – 4:00 PM
+              </p>
+              <p>
+                <span className="font-medium text-white">Sunday</span>
+                <br />
+                By Appointment
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="border-t border-gray-700 bg-[#081830]">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm tracking-[0.3em] text-gray-300 font-medium">
-              CELEBRATE. INSPIRE. CREATE MEMORIES.
-            </p>
+        {/* Book CTA */}
+        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 md:flex-row md:items-center">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold-400/15 text-gold-400">
+              <Calendar size={20} />
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-widest text-white">
+                Book Your Event
+              </h3>
+              <p className="mt-1 max-w-xs text-sm text-navy-100">
+                Let our team help you create an experience to remember.
+              </p>
+            </div>
+          </div>
 
-            <div className="flex items-center gap-4">
-              <span className="text-sm text-gray-300">FOLLOW US</span>
-              <div className="w-px h-6 bg-gray-700"></div>
-              <div className="flex gap-3">
-                <a href="#" className="w-9 h-9 rounded-full border-gray-600 flex items-center justify-center hover:bg-red-700 hover:text-white hover:border-red-700 transition">
-                  {/* <Facebook className="w-4 h-4" /> */}
-                </a>
-                <a href="#" className="w-9 h-9 rounded-full border-gray-600 flex items-center justify-center hover:bg-red-700 hover:text-white hover:border-red-700 transition">
-                  {/* <Instagram className="w-4 h-4" /> */}
-                </a>
-                <a href="#" className="w-9 h-9 rounded-full border-gray-600 flex items-center justify-center hover:bg-red-700 hover:text-white hover:border-red-700 transition">
-                  {/* <Map className="w-4 h-4" /> */}
-                </a>
-              </div>
+          <a
+            href="#home"
+            className="inline-flex items-center gap-2 rounded-md bg-gold-500 px-6 py-3 text-sm font-semibold text-navy-950 shadow-lg shadow-gold-500/20 transition-colors hover:bg-gold-400"
+          >
+            BOOK NOW <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-white/10 bg-navy-950">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 sm:px-6 md:flex-row lg:px-8">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-navy-200">
+            Celebrate. Inspire. Create Memories.
+          </p>
+
+          <div className="flex items-center gap-4">
+            <span className="text-xs uppercase tracking-widest text-navy-200">Follow Us</span>
+            <div className="h-6 w-px bg-white/20" />
+            <div className="flex gap-3">
+              <a
+                href="#"
+aria-label="Share"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-navy-100 transition-colors hover:border-gold-400 hover:bg-gold-500 hover:text-navy-950"
+              >
+                <Share2 size={16} />
+              </a>
+              <a
+                href="#"
+                aria-label="Gallery"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-navy-100 transition-colors hover:border-gold-400 hover:bg-gold-500 hover:text-navy-950"
+              >
+                <Camera size={16} />
+              </a>
+              <a
+                href="#"
+                aria-label="Map"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-navy-100 transition-colors hover:border-gold-400 hover:bg-gold-500 hover:text-navy-950"
+              >
+                <MapPin size={16} />
+              </a>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 }
