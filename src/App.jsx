@@ -1,8 +1,8 @@
-import CampAndPride from './Camp&Pride'
+import Events from './Events'
 import './App.css'
 
 function App() {
-  return <CampAndPride />
+  return <Events />
 }
 
 export default App
